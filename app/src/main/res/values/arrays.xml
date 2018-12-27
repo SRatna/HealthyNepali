@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bloodType">
+        <item>A_positive</item>
+        <item>AB_positive</item>
+        <item>B_positive</item>
+        <item>O_positive</item>
+        <item>A_negative</item>
+        <item>AB_negative</item>
+        <item>B_negative</item>
+        <item>O_negative</item>
+
+    </string-array>
+    <string-array name="sex">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="Height">
+        <item>4\' 7\"</item>
+        <item>4\' 8\"</item>
+        <item>4\' 9\"</item>
+        <item>5\'</item>
+        <item>5\' 1\"</item>
+        <item>5\' 2\"</item>
+        <item>5\' 3\"</item>
+        <item>5\' 4\"</item>
+        <item>5\' 5\"</item>
+        <item>5\' 6\"</item>
+        <item>5\' 7\"</item>
+        <item>5\' 8\"</item>
+        <item>5\' 9\"</item>
+        <item>6\'</item>
+        <item>6\' 1\"</item>
+        <item>6\' 2\"</item>
+        <item>6\' 3\"</item>
+        <item>6\' 4\"</item>
+        <item>6\' 5\"</item>
+        <item>6\' 6\"</item>
+        <item>6\' 7\"</item>
+        <item>6\' 8\"</item>
+        <item>6\' 9\"</item>
+        <item>7\'</item>
+
+    </string-array>
+    <string-array name="ageOfBaby">
+        <item>1 month</item>
+        <item>2 months</item>
+        <item>3 months</item>
+        <item>4 months</item>
+        <item>5 months</item>
+        <item>6 months</item>
+        <item>7 months</item>
+        <item>8 months</item>
+        <item>9 months</item>
+        <item>10 months</item>
+        <item>11 months</item>
+        <item>12 months</item>
+    </string-array>
+    <string-array name="ageofkids">
+        <item>1 year</item>
+        <item>2 years</item>
+        <item>3 years</item>
+        <item>4 years</item>
+        <item>5 years</item>
+        <item>6 years</item>
+        <item>7 years</item>
+        <item>8 years</item>
+        <item>9 years</item>
+        <item>10 years</item>
+        <item>11 years</item>
+        <item>12 years</item>
+        <item>13 years</item>
+        <item>14 years</item>
+    </string-array>
+    <string-array name="averageDays">
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+
+    </string-array>
+    <string-array name="messages">
+        <item>Take Medicine</item>
+        <item>Visit Doctor</item>
+        <item>Buy Medicine</item>
+        <item>Go To Hospital</item>
+        <item>Attend Health Sessions</item>
+        <item>GetUp For Yoga</item>
+    </string-array>
+
+    <string-array name="health_category">
+        <item>ENT</item>
+        <item>Sex and reproduction</item>
+        <item>Skin</item>
+        <item>Injuries</item>
+        <item>Mental Health</item>
+        <item>Bone</item>
+        <item>Neurology</item>
+        <item>Gastrointestinal</item>
+        <item>Other</item>
+    </string-array>
+</resources>

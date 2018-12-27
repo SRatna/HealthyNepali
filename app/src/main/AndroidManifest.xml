@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.practice.osho.healthynepali" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <permission android:protectionLevel="signature"
+        android:name="com.practice.osho.healthynepali.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.practice.osho.healthynepali.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".HealthyNepaliApplication"
+        android:allowBackup="true"
+        android:theme="@style/AppTheme"
+        android:icon="@mipmap/ic_icon"
+        android:label="@string/app_name">
+
+        <activity
+            android:name=".WelcomeScreen"
+            android:label="Healthy Nepali"
+            android:theme="@style/splashTheme"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:label="Healthy Nepali"
+            android:theme="@style/splashTheme"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".HealthCalculator_mainActivity"
+            android:label="Health Calculator"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity android:name=".Quiz_ChooseLevelActivity"
+            android:label="Choose Level"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity android:name=".Quiz_MainActivity"
+            android:label="Solve now"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/splashTheme"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="SignUp"
+            android:theme="@style/splashTheme"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PostedQueriesActivity"
+            android:label="@string/title_activity_posted_queries"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".AlarmListActivity"
+            android:label="Add Alarm"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".AlarmDetailsActivity"
+            android:label="Your Alarm"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".HerbalHelpMainActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <service
+            android:name=".AlarmService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".AlarmScreen"
+            android:label="@string/title_activity_alarm_screen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <service android:name="com.parse.PushService" />
+        <receiver android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.practice.osho.healthynepali" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.practice.osho.healthynepali.AlarmManagerHelper" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

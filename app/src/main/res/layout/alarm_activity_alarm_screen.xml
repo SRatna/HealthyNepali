@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="40dp"
+    android:background="@android:color/holo_blue_light"
+    tools:context="com.practice.osho.healthalarm.AlarmScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="70sp"
+        android:text="ALARM!"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <TextView
+            android:id="@+id/alarm_screen_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:text="00:00"/>
+        <TextView
+            android:id="@+id/alarm_screen_am_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:text="AM"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:text="You Have To"/>
+    <TextView
+        android:id="@+id/alarm_screen_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:textSize="35sp"
+        android:text="do sth"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <ImageButton
+        android:id="@+id/alarm_screen_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:textSize="40sp"
+
+        android:textColor="#ffffff"
+        android:background="@drawable/ic_cancel_alarm"/>
+
+</LinearLayout>
